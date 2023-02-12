@@ -1,0 +1,15 @@
+{% extends 'first_app/base.html' %}
+{% block body_block %}
+
+{% if delete_text %}
+<div class="alert alert-danger">
+  {{delete_text}}
+</div>
+{% endif %}
+
+{% if delete_artist %}
+<div class="alert alert-danger">
+  {{delete_artist}}
+</div>
+{% endif %}
+{% endblock %}

@@ -1,0 +1,9 @@
+{% extends 'first_app/base.html' %}
+{% block body_block %}
+<h1>Add Album</h1>
+<form method="POST">
+  {{album_form.as_p}}
+  {% csrf_token %}
+  <button type="submit" class="btn btn-primary btn-sm">Add</button>
+</form>
+{% endblock %}
